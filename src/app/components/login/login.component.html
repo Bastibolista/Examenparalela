@@ -1,11 +1,10 @@
-<p>
-  login works!
-</p>
 
 <div class="container">
   <img src="assets/Utem.jpg" class="img-fluid" alt="Responsive image">
-  <input type="text" class="form-control" placeholder="RUT">
-  <input type="password" class="form-control" placeholder="Ingrese contraseña">
-  <button type="button" class="btn-success btn-lg btn-block"> Ingresar </button>
-
+  <form (submit)="loginUser($event)">
+    <input type="text" class="form-control" placeholder="RUT">
+    <input type="password" class="form-control" placeholder="Ingrese contraseña">
+    <input type="submit" class="btn-success btn-lg btn-block" value="Ingresar">
+<!--    <button type="button" class="btn-success btn-lg btn-block"> Ingresar </button> -->
+  </form>
 </div>
